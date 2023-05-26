@@ -1,6 +1,16 @@
-.responsive {
-	border: none;
-	height: auto;
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+h1 {
+  font-size: 20px;
+}
+div {
+  width: 100%;
+}
+img[usemap] {
+  border: none;
+  height: auto;
   max-width: 100%;
-	width: auto;
-}  
+  width: auto;
+}
