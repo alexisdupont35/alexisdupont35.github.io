@@ -5,8 +5,12 @@
       <link rel="stylesheet" type="text/css" href="./style.css">
    </head>
    <body>
+    <h1> Jolie cuisine ! </h1>
+      <div class="container">
+        <button style="--clr:#ffd54f" onclick="play()"><span>  Play 🔊</span><i></i></button>
+      </div>
       <div>
-        <h1>c bien la</h1>
+        <audio id="audio" src="./pictures/Daft Punk - Technologic (Official Video).mp3"></audio>
         <img src="./pictures/kitchen.jpg" usemap="#image-map" width="1024" height="760">
         <map name="image-map">
           <area alt="Kitchen" title="Kitchen" href="./trees.html" coords="510,110,600,470" shape="rect">
@@ -17,6 +21,12 @@
       <script>$(document).ready(function(e) {
          $('img[usemap]').rwdImageMaps();
          });
+      </script>
+      <script>
+        function play() {
+          var audio = document.getElementById("audio");
+          audio.play();
+        }
       </script>
    </body>
 </html>
