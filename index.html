@@ -1,32 +1,27 @@
-<!DOCTYPE html>
 <html>
-   <head>
-      <title>Kitchen</title>
-      <link rel="stylesheet" type="text/css" href="./style.css">
-   </head>
-   <body>
-    <h1> Jolie cuisine ! </h1>
-      <div class="container">
-        <button style="--clr:#ffd54f" onclick="play()"><span>  Play 🔊</span><i></i></button>
-      </div>
-      <div>
-        <audio id="audio" src="./pictures/Daft Punk - Technologic (Official Video).mp3"></audio>
-        <img src="./pictures/kitchen.jpg" usemap="#image-map" width="1024" height="760">
-        <map name="image-map">
-          <area alt="Kitchen" title="Kitchen" href="./trees.html" coords="510,110,600,470" shape="rect">
-        </map>
-      </div>
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-      <script src="./scripts/jquery.rwdImageMaps.min.js"></script>
-      <script>$(document).ready(function(e) {
-         $('img[usemap]').rwdImageMaps();
-         });
-      </script>
-      <script>
-        function play() {
-          var audio = document.getElementById("audio");
-          audio.play();
-        }
-      </script>
-   </body>
+  <head>
+    <title>digicode</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 id="title" class="txt">Bonjour</h1>
+    <h4 id="subtitle" class="txt">Entre le code <b><u>à 4 chiffres</u></b> pour découvrir ton cadeau:</h4>
+    <main>
+      <div id="numbers" class="result">0</div>
+      <div id="icon" class="result"></div>
+      <div id="number-1" class="key number">1</div>
+      <div id="number-2" class="key number">2</div>
+      <div id="number-3" class="key number">3</div>
+      <div id="number-4" class="key number">4</div>
+      <div id="number-5" class="key number">5</div>
+      <div id="number-6" class="key number">6</div>
+      <div id="number-7" class="key number">7</div>
+      <div id="number-8" class="key number">8</div>
+      <div id="number-9" class="key number">9</div>
+      <div id="number-0" class="key number">0</div>
+      <div id="key" class="key">🔑</div>
+      <div id="clear" class="key">Clear</div>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
