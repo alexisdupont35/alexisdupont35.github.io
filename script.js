@@ -12,7 +12,7 @@ const numbers = document.querySelectorAll('.number');
 const result = document.getElementById('numbers');
 const key = document.getElementById('key');
 const icon = document.getElementById('icon');
-const code = '4516';
+const code = '4316';
 
  	 /* number */
 for (let i = 0,c = numbers.length; i < c; i++){
